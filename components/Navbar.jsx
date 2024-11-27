@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
 import Button from "./Button";
+import Image from 'next/image';
 
 const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
 
@@ -71,7 +72,7 @@ const NavBar = () => {
         <nav className="flex size-full items-center justify-between p-4">
           {/* Logo and Product button */}
           <div className="flex items-center gap-7">
-            <img src="/img/logo.png" alt="logo" className="w-10" />
+            <Image src="/img/logo.png" alt="logo" height={80} width={80} className="w-10" />
 
             <Button
               id="product-button"

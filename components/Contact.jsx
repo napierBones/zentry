@@ -1,9 +1,10 @@
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
+import Image from 'next/image';
 
 const ImageClipBox = ({ src, clipClass }) => (
   <div className={clipClass}>
-    <img src={src} />
+    <Image src={src} alt='' height={20} width={20} />
   </div>
 );
 

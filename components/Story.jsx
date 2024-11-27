@@ -3,6 +3,7 @@ import { useRef } from "react";
 
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
+import Image from 'next/image';
 
 const FloatingImage = () => {
   const frameRef = useRef(null);
@@ -61,7 +62,7 @@ const FloatingImage = () => {
           <div className="story-img-container">
             <div className="story-img-mask">
               <div className="story-img-content">
-                <img
+                <Image
                   ref={frameRef}
                   onMouseMove={handleMouseMove}
                   onMouseLeave={handleMouseLeave}
@@ -70,6 +71,8 @@ const FloatingImage = () => {
                   src="/img/entrance.webp"
                   alt="entrance.webp"
                   className="object-contain"
+                  height={2000}
+                  width={3200}
                 />
               </div>
             </div>
